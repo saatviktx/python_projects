@@ -1,2 +1,2 @@
-# python_projects
-This is a journey of my documented Python development starting on March 2026. More to be added, maybe.
+# My Python Projects 
+This is a journey of my documented Python development starting on March 2026. Let's see how far I develop 🧐!
