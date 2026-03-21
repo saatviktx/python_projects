@@ -1,7 +1,3 @@
-# =============================================================
-# 🐍 Python Fundamentals Assessment — Section 3: Mini Project
-# =============================================================
-
 # REQUIREMENTS CHECKLIST (cross off as you use them):
 # [YES] Variables — store meaningful data in named variables
 # [YES] Data types — use at least int, str, and bool naturally
