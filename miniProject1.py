@@ -29,20 +29,22 @@
 # - Have fun with it
 
 # YOUR CODE BELOW:
+#In case you're curious about the requirements, they were prompted from Claude. The code is solely my own work.
+
 def stmtPrint(blank):
     print(f'Here\'s your {blank} playlist: {playlist}')
 
 playlist = []
 stmtPrint('empty')
 
-songChoose = bool(input('Would you like to add a song to your playlist (True/False)? '))
+songChoose = input('Would you like to add a song to your playlist (Y/N)? ').upper()
 
-while songChoose == True:
-    song1 = input('What song would you like to add? ').strip()
-    playlist.append(song1)
+while songChoose == 'Y':
+    song = input('What song would you like to add? ').strip()
+    playlist.append(song)
     stmtPrint('updated')
-    songChoose = bool(input('Would you like to add a song to your playlist (True/False)? '))
-stmtPrint('final') #IM STUCK ON THIS. IM DONE FOR TODAY...
+    songChoose = input('Would you like to add a song to your playlist (Y/N)? ')
+stmtPrint('final') #I was stuck on this while loop lol, only to find out it had to do with booleans...
 
 feedback = input('Would you like to leave feedback (Y/N)? ')
 if feedback == 'Y' or feedback == 'y':
@@ -52,7 +54,7 @@ else:
     print('Got it. Thanks for using our service!')
 
 review = float(input('How would you rate this service from a scale of 1-5? '))
-if review < 3:
+if review <= 3:
     print('We\'re sorry for any issues caused...')
 elif review > 3 and review <= 5:
     print('We appreciate your feedback! We\'re glad you liked our service!!!')
@@ -60,8 +62,8 @@ else:
     while review > 5:
         review = float(input('How would you rate this service from a scale of 1-5? '))
         if review <= 5:
-            if review < 3:
-                print('We\'re sorry for any issues caused...')
+            if review <= 3:
+                print('We\'re sorry for any issues caused...But, have a great week ahead.')
             elif review > 3 and review <= 5:
                 print('We appreciate your feedback! We\'re glad you liked our service!!!')
 
