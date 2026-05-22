@@ -6,5 +6,10 @@ This is a journey of my documented Python development starting on March 2026. Le
 - First Big Project: completed April 24th, 2026
 
 ## **What's Next? 📈** 
-- Python Libraries (beginning with NumPy)
-- NumPy, Matplotlib, Scikit, etc.
+- Refreshing Fundamentals
+- Save Libraries for Later
+
+## **Places to Code 💻**
+- PyCharm
+- Codewars
+- Practical Python
